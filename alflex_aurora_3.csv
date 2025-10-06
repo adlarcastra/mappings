@@ -1,0 +1,16 @@
+"degrees_f32_set_water_temp","input_58/10",Combined
+"degrees_f32_room_temp",xd,Simple
+"degrees_f32_desired_temp",xd,Simple
+"degrees_f32_outside_temp",input_52/10,Combined
+"degrees_f32_supply_temp",input_45/10,Combined
+"degrees_f32_return_temp",input_44/10,Combined
+"lmin_f32_water_flow",input_66/10,Combined
+"degrees_f32_heating_start_ambient_temp",holding_6042,Simple
+"onoff_f32_power_on",holding_2103,Simple
+"enum_f32_heating_mode",holding_2102,Simple
+"enum_f32_heating_curve_preset","math::abs(holding_2102 - 2) * (holding_6189 * (1 - min(1, math::abs(holding_6185))) + holding_6190 * min(1, math::abs(holding_6185))) + (holding_2102 - 1) * (holding_6191 * (1 - (1 - max(0, holding_6186 - 1))) + holding_6192 * (1 - max(0, holding_6186 - 1)))",Combined
+"onoff_f32_custom_heating_curve","min(0.0, math::abs(holding_2102 - 2) * (holding_6189 * (1 - min(1, math::abs(holding_6185))) + holding_6190 * min(1, math::abs(holding_6185))) + (holding_2102 - 1) * (holding_6191 * (1 - (1 - max(0, holding_6186 - 1))) + holding_6192 * (1 - max(0, holding_6186 - 1))) - 8)",Combined
+"hz_f32_compressor_frequency",input_81,Simple
+"hz_f32_fan_frequency",input_74,Simple
+"kwh_f32_power_used","bitand(shl(input_1232, 16), input_1233)",Bit
+"kwh_f32_power_delivered","bitand(shl(input_1234, 16), input_1235) + bitand(shl(input_1236,16),input_1237)",Bit
