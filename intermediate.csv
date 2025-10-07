@@ -1,0 +1,16 @@
+"degrees_f32_set_water_temp","degrees_f32_set_water_temp",Simple
+"degrees_f32_room_temp",degrees_f32_room_temp,Simple
+"degrees_f32_desired_temp",degrees_f32_desired_temp,Simple
+"degrees_f32_outside_temp",degrees_f32_outside_temp,Simple
+"degrees_f32_supply_temp",degrees_f32_supply_temp,Simple
+"degrees_f32_return_temp",degrees_f32_return_temp,Simple
+"lmin_f32_water_flow",lmin_f32_water_flow,Simple
+"degrees_f32_heating_start_ambient_temp",degrees_f32_heating_start_ambient_temp,Simple
+"onoff_f32_power_on",onoff_f32_power_on,Simple
+"enum_f32_heating_mode",enum_f32_heating_mode,Simple
+"enum_f32_heating_curve_preset","math::abs(enum_f32_heating_mode - 2) * (degrees_f32_heating_curve_cooling_low_temp * (1 - min(1, math::abs(enum_f32_cooling_type))) + degrees_f32_heating_curve_cooling_high_temp * min(1, math::abs(enum_f32_cooling_type))) + (enum_f32_heating_mode - 1) * (degrees_f32_heating_curve_heating_low_temp * (1 - (1 - max(0, enum_f32_heating_type - 1))) + degrees_f32_heating_curve_heating_high_temp * (1 - max(0, enum_f32_heating_type - 1)))",Combined
+"onoff_f32_custom_heating_curve","min(0.0, math::abs(enum_f32_heating_mode - 2) * (degrees_f32_heating_curve_cooling_low_temp * (1 - min(1, math::abs(enum_f32_cooling_type))) + degrees_f32_heating_curve_cooling_high_temp * min(1, math::abs(enum_f32_cooling_type))) + (enum_f32_heating_mode - 1) * (degrees_f32_heating_curve_heating_low_temp * (1 - (1 - max(0, enum_f32_heating_type - 1))) + degrees_f32_heating_curve_heating_high_temp * (1 - max(0, enum_f32_heating_type - 1))) - 8)",Combined
+"hz_f32_compressor_frequency",hz_f32_compressor_frequency,Simple
+"hz_f32_fan_frequency",hz_f32_fan_frequency,Simple
+"kwh_f32_power_used","kwh_f32_power_used",Bit
+"kwh_f32_power_delivered","kwh_f32_power_delivered",Bit
