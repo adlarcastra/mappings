@@ -13,12 +13,12 @@
 "degrees_f32_heating_start_ambient_temp",holding_6042,Simple
 "onoff_f32_power_on",holding_2103,Simple
 "enum_f32_heating_mode",holding_2102,Simple
-"degrees_f32_heating_curve_cooling_low_temp",holding_6189,Simple
-"degrees_f32_heating_curve_cooling_high_temp",holding_6190,Simple
+"enum_f32_heating_curve_cooling_low_temp",holding_6189,Simple
+"enum_f32_heating_curve_cooling_high_temp",holding_6190,Simple
 "enum_f32_cooling_type",holding_6185,Simple
-"degrees_f32_heating_curve_heating_low_temp",holding_6191,Simple
+"enum_f32_heating_curve_heating_low_temp",holding_6191,Simple
 "enum_f32_heating_type",holding_6186,Simple
-"degrees_f32_heating_curve_heating_high_temp",holding_6192,Simple
+"enum_f32_heating_curve_heating_high_temp",holding_6192,Simple
 "hz_f32_compressor_frequency",input_81,Simple
 "hz_f32_fan_frequency",input_74,Simple
 "kwh_f32_power_used","bitand(shl(input_1232, 16), input_1233)",Bit
