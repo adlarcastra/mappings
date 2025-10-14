@@ -2,24 +2,24 @@
 "degrees_f32_set_water_temp","/10",Combined
 "degrees_f32_room_temp",xd,Simple
 "degrees_f32_desired_temp",xd,Simple
-"degrees_f32_outside_temp_raw",input_74,Simple
-"degrees_f32_outside_temp",input_74/10,Combined
-"degrees_f32_supply_temp_raw",input_80,Simple
-"degrees_f32_supply_temp",input_80/10,Combined
-"degrees_f32_return_temp_raw",input_79,Simple
-"degrees_f32_return_temp",input_79/10,Combined
-"lmin_f32_water_flow_raw",input_88,Simple
-"lmin_f32_water_flow",input_88/10,Combined
-"degrees_f32_heating_start_ambient_temp",holding_278,Simple
-"onoff_f32_power_on",holding_773,Simple
-"enum_f32_heating_mode",holding_772,Simple
+"degrees_f32_outside_temp_raw",holding_75,Simple
+"degrees_f32_outside_temp",holding_75/10,Combined
+"degrees_f32_supply_temp_raw",holding_81,Simple
+"degrees_f32_supply_temp",holding_81/10,Combined
+"degrees_f32_return_temp_raw",holding_80,Simple
+"degrees_f32_return_temp",holding_80/10,Combined
+"lmin_f32_water_flow_raw",holding_89,Simple
+"lmin_f32_water_flow",holding_89/10,Combined
+"degrees_f32_heating_start_ambient_temp",holding_279,Simple
+"onoff_f32_power_on",holding_774,Simple
+"enum_f32_heating_mode",holding_773,Simple
 "enum_f32_heating_curve_cooling_low_temp","",Simple
 "enum_f32_heating_curve_cooling_high_temp","",Simple
 "enum_f32_cooling_type","",Simple
 "enum_f32_heating_curve_heating_low_temp","",Simple
 "enum_f32_heating_curve_heating_high_temp","",Simple
 "enum_f32_heating_type","",Simple
-"hz_f32_compressor_frequency",input_64,Simple
-"hz_f32_fan_frequency",input_65,Simple
-"kwh_f32_power_used","bitand(shl(input_1232, 16), input_1233)",Bit
-"kwh_f32_power_delivered","bitand(shl(input_229, 16), input_230) + bitand(shl(input_236,16),input_237)",Bit
+"hz_f32_compressor_frequency",holding_65,Simple
+"hz_f32_fan_frequency",holding_66,Simple
+"kwh_f32_power_used","bitand(shl(holding_1233, 16), holding_1234)",Bit
+"kwh_f32_power_delivered","bitand(shl(holding_230, 16), holding_231) + bitand(shl(holding_237,16),holding_238)",Bit
