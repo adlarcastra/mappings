@@ -1,0 +1,69 @@
+"wrong phase","bitand(holding_3, 1)",Bit
+"missing phase","bitand(holding_3, 2)",Bit
+"water flow failure","bitand(holding_3, 4)",Bit
+"communication failure","bitand(holding_3, 8)",Bit
+"out of use time","bitand(holding_3, 32)",Bit
+"water tank temperature sensor failure","bitand(holding_3, 64)",Bit
+"water inlet temperature sensor failure","bitand(holding_3, 128)",Bit
+"indoor ambient temperature sensor failure","bitand(holding_3, 256)",Bit
+"outdoor ambient temperature sensor failure","bitand(holding_3, 512)",Bit
+"dhw return water temperature sensor failure","bitand(holding_3, 1024)",Bit
+"water outlet temperature too low in cooling mode","bitand(holding_3, 2048)",Bit
+"water outlet temperature sensor failure","bitand(holding_3, 8192)",Bit
+"water outlet temperature too high in heating mode","bitand(holding_3, 16384)",Bit
+"large temperature difference between water inlet and outlet","bitand(holding_3, 32768)",Bit
+"ambient temperature too low","bitand(holding_4, 1)",Bit
+"low water flow","bitand(holding_4, 32768)",Bit
+"expansion board communication failure","bitand(holding_5, 2)",Bit
+"high pressure switch failure","bitand(holding_6, 1)",Bit
+"low pressure switch failure","bitand(holding_6, 2)",Bit
+"high pressure too high","bitand(holding_6, 4)",Bit
+"low pressure too low","bitand(holding_6, 8)",Bit
+"exhaust pressure too high","bitand(holding_6, 16)",Bit
+"current protection","bitand(holding_6, 32)",Bit
+"coil temperature sensor value","bitand(holding_6, 128)",Bit
+"suction temperature sensor failure","bitand(holding_6, 256)",Bit
+"exhaust temperature sensor value","bitand(holding_6, 512)",Bit
+"economizer inlet temperature sensor failure","bitand(holding_6, 1024)",Bit
+"economizer outlet temperature sensor failure","bitand(holding_6, 2048)",Bit
+"fan drive board communication failure","bitand(holding_6, 4096)",Bit
+"fan failure","bitand(holding_6, 8192)",Bit
+"cooling coil temperature sensor failure","bitand(holding_6, 16384)",Bit
+"low pressure sensor failure","bitand(holding_7, 2)",Bit
+"compressor drive board communication failure","bitand(holding_7, 16)",Bit
+"ipm overcurrent - ipm module protection","bitand(holding_8, 1)",Bit
+"compressor driver failure","bitand(holding_8, 2)",Bit
+"compressor overcurrent","bitand(holding_8, 4)",Bit
+"input voltage missing phase","bitand(holding_8, 8)",Bit
+"ipm current sampling rate","bitand(holding_8, 16)",Bit
+"power component overheating shutdown","bitand(holding_8, 32)",Bit
+"pre-charge failure","bitand(holding_8, 64)",Bit
+"dc bus overvoltage","bitand(holding_8, 128)",Bit
+"dc bus undervoltage","bitand(holding_8, 256)",Bit
+"ac input undervoltage","bitand(holding_8, 512)",Bit
+"ac input overvoltage","bitand(holding_8, 1024)",Bit
+"input voltage sampling failure","bitand(holding_8, 2048)",Bit
+"dsp and pfc communication failure","bitand(holding_8, 4096)",Bit
+"board radiator temperature sensor failure","bitand(holding_8, 8192)",Bit
+"dsp and communicate board communication failure","bitand(holding_8, 16384)",Bit
+"communication failure with motherboard","bitand(holding_8, 32768)",Bit
+"compressor overcurrent alarm","bitand(holding_9, 1)",Bit
+"compressor weak magnetic protection alarm","bitand(holding_9, 2)",Bit
+"ipm overheat alarm","bitand(holding_9, 4)",Bit
+"pfc overheat alarm","bitand(holding_9, 8)",Bit
+"ac input overcurrent alarm","bitand(holding_9, 16)",Bit
+"eeprom error alarm","bitand(holding_9, 32)",Bit
+"eeprom refresh complete","bitand(holding_9, 128)",Bit
+"temperature sensing failure limit","bitand(holding_9, 256)",Bit
+"ac undervoltage frequency limit protection alarm","bitand(holding_9, 512)",Bit
+"ipm module overheat and shutdown","bitand(holding_10, 1)",Bit
+"compressor missing phase","bitand(holding_10, 2)",Bit
+"compressor overload","bitand(holding_10, 4)",Bit
+"input current sampling failure","bitand(holding_10, 8)",Bit
+"ipm supply voltage failure","bitand(holding_10, 16)",Bit
+"pre-charge circuit voltage failure","bitand(holding_10, 32)",Bit
+"eeprom failure","bitand(holding_10, 64)",Bit
+"ac input overvoltage failure","bitand(holding_10, 128)",Bit
+"microelectronics failure","bitand(holding_10, 256)",Bit
+"compressor type code failure","bitand(holding_10, 512)",Bit
+"current sampling signal overcurrent","bitand(holding_10, 1024)",Bit

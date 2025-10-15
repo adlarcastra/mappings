@@ -1,0 +1,55 @@
+"communication error between hydraulic module pcb and the user interface","bitand(input_92, 1)",Bit
+"discharge temperature sensor error","bitand(input_92, 2)",Bit
+"coil temperature sesnor error","bitand(input_92, 4)",Bit
+"outdoor ambient temperature sensor error","bitand(input_92, 8)",Bit
+"refrigerant liquid temperature sensor error","bitand(input_92, 16)",Bit
+"suction temperature sensor error","bitand(input_92, 32)",Bit
+"domestic water temperature sensor error","bitand(input_92, 64)",Bit
+"inlet water temperature sensor error","bitand(input_92, 128)",Bit
+"outlet water temperature sensor error","bitand(input_92, 256)",Bit
+"communication between refrigerant system pcb and drive pcb failure","bitand(input_92, 512)",Bit
+"discharge pressure sensor fault","bitand(input_92, 4096)",Bit
+"low pressure sensor error","bitand(input_92, 8192)",Bit
+"too low dc bus voltage","bitand(input_92, 16384)",Bit
+"too high dc bus voltage","bitand(input_92, 32768)",Bit
+"too high ac input peak current","bitand(input_93, 1)",Bit
+"abnormal ipm module","bitand(input_93, 2)",Bit
+"abnormal pfc module","bitand(input_93, 4)",Bit
+"compressor startup failure","bitand(input_93, 8)",Bit
+"compressor phase loss error","bitand(input_93, 16)",Bit
+"inverter module reset","bitand(input_93, 32)",Bit
+"too high compressor current protection","bitand(input_93, 64)",Bit
+"too high pfc module temperature protection","bitand(input_93, 128)",Bit
+"the current detection circuit failure","bitand(input_93, 256)",Bit
+"out of step protection","bitand(input_93, 512)",Bit
+"pfc module temperature sensor error","bitand(input_93, 1024)",Bit
+"communication data error between refrigerant system pcb and inverter pcb","bitand(input_93, 2048)",Bit
+"too high ipm module temperature","bitand(input_93, 4096)",Bit
+"ipm module temperature sensor error","bitand(input_93, 8192)",Bit
+"abnormal ac input power supply","bitand(input_94, 2)",Bit
+"inverter module debugging data","bitand(input_94, 4)",Bit
+"power off reset","bitand(input_94, 8)",Bit
+"tc error the final water temperature sensor","bitand(input_95, 1)",Bit
+"solar temperature sensor tso error","bitand(input_95, 2)",Bit
+"the built-in temperature sensor tro of the wire controller is faulty","bitand(input_95, 4)",Bit
+"zone 2 temperature sensor tz2 error","bitand(input_95, 8)",Bit
+"up temperature sensor te1 of buffer tank error","bitand(input_95, 16)",Bit
+"down temperature sensor te2 of buffer tank error","bitand(input_95, 32)",Bit
+"outlet water pressure sensor ps1 error","bitand(input_95, 128)",Bit
+"gas sensor offline","bitand(input_95, 256)",Bit
+"gas sensor fault","bitand(input_95, 512)",Bit
+"module offline","bitand(input_95, 1024)",Bit
+"water flow failure","bitand(input_98, 1)",Bit
+"high refrigerant pressure protection","bitand(input_98, 2)",Bit
+"low refrigerant pressure protection","bitand(input_98, 4)",Bit
+"coil overheating protection","bitand(input_98, 8)",Bit
+"high discharge temperature protection","bitand(input_98, 16)",Bit
+"too low outlet water temperature protection","bitand(input_98, 32)",Bit
+"too low refrigerant liquid temperature protection","bitand(input_98, 64)",Bit
+"too high system pressure protection","bitand(input_98, 128)",Bit
+"low refrigerant liquid temperature protection","bitand(input_98, 512)",Bit
+"dc fan 1 failure","bitand(input_98, 1024)",Bit
+"4-way valve shifting failure","bitand(input_98, 4096)",Bit
+"refrigerant leakage fault","bitand(input_98, 8192)",Bit
+"built-in dc water pump abnormal","bitand(input_99, 16)",Bit
+"outlet water pressure sensor error","bitand(input_99, 256)",Bit
