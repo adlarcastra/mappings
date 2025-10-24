@@ -10,7 +10,7 @@
 "degrees_f32_return_temp",input_44/10,Combined
 "lmin_f32_water_flow_raw",input_66,Simple
 "lmin_f32_water_flow",input_66/10,Combined
-"degrees_f32_heating_start_ambient_temp",holding_6042,Simple
+"degrees_f32_heating_start_ambient_temp","if(holding_6042 >= 32768, holding_6042 - 65536, holding_6042)",Combined
 "onoff_f32_power_on",holding_2103,Simple
 "enum_f32_heating_mode",holding_2102,Simple
 "enum_f32_heating_curve_cooling_low_temp",holding_6189,Simple
