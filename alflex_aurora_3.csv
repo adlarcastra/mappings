@@ -1,80 +1,126 @@
-"degrees_f32_set_water_temp_raw","input_58",Simple
-"degrees_f32_set_water_temp","input_58/10",Combined
+"degrees_f32_set_water_temp_raw","input_57",Simple
+"degrees_f32_set_water_temp","input_57/10",Combined
 "degrees_f32_room_temp",xd,Simple
 "degrees_f32_desired_temp",xd,Simple
-"degrees_f32_outside_temp_raw",input_52,Simple
-"degrees_f32_outside_temp",input_52/10,Combined
-"degrees_f32_supply_temp_raw",input_45,Simple
-"degrees_f32_supply_temp",input_45/10,Combined
-"degrees_f32_return_temp_raw",input_44,Simple
-"degrees_f32_return_temp",input_44/10,Combined
-"lmin_f32_water_flow_raw",input_66,Simple
-"lmin_f32_water_flow",input_66/10,Combined
-"degrees_f32_heating_start_ambient_temp","if(holding_6042 >= 32768, holding_6042 - 65536, holding_6042)",Combined
-"onoff_f32_power_on",holding_2103,Simple
-"enum_f32_heating_mode",holding_2102,Simple
-"enum_f32_heating_curve_cooling_low_temp",holding_6189,Simple
-"enum_f32_heating_curve_cooling_high_temp",holding_6190,Simple
-"enum_f32_cooling_type",holding_6185,Simple
-"enum_f32_heating_curve_heating_low_temp",holding_6191,Simple
-"enum_f32_heating_type",holding_6186,Simple
-"enum_f32_heating_curve_heating_high_temp",holding_6192,Simple
-"hz_f32_compressor_frequency",input_81,Simple
-"hz_f32_fan_frequency",input_74,Simple
-"kwh_f32_power_used","bitand(shl(input_1232, 16), input_1233)",Bit
-"kwh_f32_power_delivered","bitand(shl(input_1234, 16), input_1235) + bitand(shl(input_1236,16),input_1237)",Bit
-"error_hydraulic_module_communication","bitand(input_92, 1)",Bit
-"error_discharge_temperature_sensor","bitand(input_92, 2)",Bit
-"error_coil_temperature_sensor","bitand(input_92, 4)",Bit
-"error_ambient_temperature_sensor","bitand(input_92, 8)",Bit
-"error_refrigerant_liquid_temperature_sensor_error","bitand(input_92, 16)",Bit
-"error_suction_temperature_sensor","bitand(input_92, 32)",Bit
-"error_domestic_water_temperature_sensor","bitand(input_92, 64)",Bit
-"error_inlet_water_temperature_sensor","bitand(input_92, 128)",Bit
-"error_outlet_water_temperature_sensor","bitand(input_92, 256)",Bit
-"error_refrigerant_system_communication","bitand(input_92, 512)",Bit
-"error_discharge_pressure_sensor","bitand(input_92, 4096)",Bit
-"error_low_pressure_sensor","bitand(input_92, 8192)",Bit
-"error_dc_bus_voltage_too_low","bitand(input_92, 16384)",Bit
-"error_dc_bus_voltage_too_high","bitand(input_92, 32768)",Bit
-"error_peak_ac_input_current_too_high","bitand(input_93, 1)",Bit
-"error_abnormal_ipm_module","bitand(input_93, 2)",Bit
-"error_abnormal_pfc_module","bitand(input_93, 4)",Bit
-"error_compressor_startup_failure","bitand(input_93, 8)",Bit
-"error_compressor_phase_loss","bitand(input_93, 16)",Bit
-"error_inverter_module_reset","bitand(input_93, 32)",Bit
-"error_compressor_current_too_high","bitand(input_93, 64)",Bit
-"error_pcf_module_temperature_too_high","bitand(input_93, 128)",Bit
-"error_current_detection_circuit_failure","bitand(input_93, 256)",Bit
-"error_out_of_step_protection","bitand(input_93, 512)",Bit
-"error_pfc_module_temperature_sensor","bitand(input_93, 1024)",Bit
-"error_refirgerant_system_inverter_pcb_data_communication","bitand(input_93, 2048)",Bit
-"error_ipm_module_temperature_too_high","bitand(input_93, 4096)",Bit
-"error_ipm_module_temperature_sensor","bitand(input_93, 8192)",Bit
-"error_abnormal_ac_input_power_supply","bitand(input_94, 2)",Bit
-"error_inverter_module_debugging_data","bitand(input_94, 4)",Bit
-"error_power_off_reset","bitand(input_94, 8)",Bit
-"error_final_water_temperature_sensor","bitand(input_95, 1)",Bit
-"error_solar_temperature_sensor_tso","bitand(input_95, 2)",Bit
-"error_wire_controller_built-in_temperature_sensor_tro_faulty","bitand(input_95, 4)",Bit
-"error_zone_2_temperature_sensor_tz2_error","bitand(input_95, 8)",Bit
-"error_up_temperature_sensor_te1_of_buffer_tank","bitand(input_95, 16)",Bit
-"error_down_temperature_sensor_te2_of_buffer_tank","bitand(input_95, 32)",Bit
-"error_outlet_water_pressure_sensor_ps1","bitand(input_95, 128)",Bit
-"error_gas_sensor_offline","bitand(input_95, 256)",Bit
-"error_gas_sensor_fault","bitand(input_95, 512)",Bit
-"error_unit_module_offline","bitand(input_95, 1024)",Bit
-"error_water_flow_failure","bitand(input_98, 1)",Bit
-"error_refrigerant_pressure_too_high","bitand(input_98, 2)",Bit
-"error_refrigerant_pressure_too_low","bitand(input_98, 4)",Bit
-"error_coil_too_hot","bitand(input_98, 8)",Bit
-"error_discharge_temperature_too_high","bitand(input_98, 16)",Bit
-"error_water_temperature_too_low","bitand(input_98, 32)",Bit
-"error_refrigerant_liquid_temperature_too_low","bitand(input_98, 64)",Bit
-"error_system_pressure_too_high","bitand(input_98, 128)",Bit
-"error_low_refrigerant_liquid","bitand(input_98, 512)",Bit
-"error_dc_fan_1_failure","bitand(input_98, 1024)",Bit
-"error_4-way valve_shifting_failure","bitand(input_98, 4096)",Bit
-"error_refrigerant_leakage","bitand(input_98, 8192)",Bit
-"error_built-in_dc_water_pump_abnormal","bitand(input_99, 16)",Bit
-"error_outlet_water_pressure_sensor","bitand(input_99, 256)",Bit
+"degrees_f32_outside_temp_raw",input_51,Simple
+"degrees_f32_outside_temp",input_51/10,Combined
+"degrees_f32_supply_temp_raw",input_44,Simple
+"degrees_f32_supply_temp",input_44/10,Combined
+"degrees_f32_return_temp_raw",input_43,Simple
+"degrees_f32_return_temp",input_43/10,Combined
+"lmin_f32_water_flow_raw",input_65,Simple
+"lmin_f32_water_flow",input_65/10,Combined
+"degrees_f32_heating_start_ambient_temp","if(holding_6041 >= 32768, holding_6041 - 65536, holding_6041)",Combined
+"onoff_f32_power_on",holding_2102,Simple
+"enum_f32_heating_mode",holding_2101,Simple
+"enum_f32_heating_curve_cooling_low_temp",holding_6188,Simple
+"enum_f32_heating_curve_cooling_high_temp",holding_6189,Simple
+"enum_f32_cooling_type",holding_6184,Simple
+"enum_f32_heating_curve_heating_low_temp",holding_6190,Simple
+"enum_f32_heating_type",holding_6185,Simple
+"enum_f32_heating_curve_heating_high_temp",holding_6191,Simple
+"hz_f32_compressor_frequency",input_80,Simple
+"hz_f32_fan_frequency",input_73,Simple
+"kwh_f32_power_used","bitand(shl(input_1231, 16), input_1232)",Bit
+"kwh_f32_power_delivered","bitand(shl(input_1233, 16), input_1234) + bitand(shl(input_1235,16),input_1236)",Bit
+"enum_f32_sound_mode","holding_2104",Simple
+"degrees_f32_manual_set_temp_heating","holding_2108",Simple
+"degrees_f32_manual_set_temp_cooling","holding_2107",Simple
+"enum_f32_set_temp_type","holding_6124",Simple
+"minutes_f32_heating_curve_heating_refresh_time","holding_6197",Simple
+"minutes_f32_heating_curve_cooling_refresh_time","holding_6196",Simple
+"degrees_f32_custom_heating_heating_curve_water_temp_1","holding_6204",Simple
+"degrees_f32_custom_heating_heating_curve_outside_temp_1","holding_6202",Simple
+"degrees_f32_custom_heating_heating_curve_water_temp_2","holding_6205",Simple
+"degrees_f32_custom_heating_heating_curve_outside_temp_2","holding_6203",Simple
+"degrees_f32_custom_heating_cooling_curve_water_temp_1","holding_6200",Simple
+"degrees_f32_custom_heating_cooling_curve_outside_temp_1","holding_6198",Simple
+"degrees_f32_custom_heating_cooling_curve_water_temp_2","holding_6201",Simple
+"degrees_f32_custom_heating_cooling_curve_outside_temp_2","holding_6199",Simple
+"degrees_f32_hysteresis_ta","holding_6001",Simple
+"degrees_f32_hysteresis_a","holding_6089",Simple
+"enum_f32_circulation_pump_mode","holding_6273",Simple
+"percentage_f32_circulation_pump_max_speed","holding_6272",Simple
+"percentage_f32_circulation_pump_min_speed","holding_6062",Simple
+"percentage_f32_circulation_pump_speed_at_set_temp","holding_6051",Simple
+"m3hour_f32_nominal_water_flow","holding_6212",Simple
+"onoff_f32_boiler_assistance","holding_6036",Simple
+"enum_f32_external_heating_type","holding_6121",Simple
+"degrees_f32_coil_temp_raw","input_50",Simple
+"degrees_f32_coil_temp","input_50/10",Combined
+"bar_f32_outlet_water_pressure_raw","input_62",Simple
+"bar_f32_outlet_water_pressure","input_62/10",Combined
+"percentage_f32_dc_pump_feedback_pwm","input_64",Simple
+"degrees_f32_zone_1_weather_temp_curve_cooling_set_temp","input_67",Simple
+"degrees_f32_zone_1_weather_temp_curve_heating_set_temp","input_68",Simple
+"rpm_f32_no_1_dc_fan_speed","input_73",Simple
+"rpm_f32_no_2_dc_fan_speed","input_74",Simple
+"volt_f32_ac_input_voltage","input_75",Simple
+"amp_f32_ac_input_current","input_76",Simple
+"onoff_f32_main_water_pump_switch_status","input_81",Simple
+"onoff_f32_four_way_valve_switch_status","input_81",Simple
+"volt_f32_single_phase_power_supply_voltage","input_1225",Simple
+"amp_f32_single_phase_power_supply_current","input_1226/10",Combined
+"amp_f32_single_phase_power_supply_current_raw","input_1226",Simple
+"volt_f32_three_phase_power_supply_voltage_b","input_1227",Simple
+"amp_f32_three_phase_power_supply_current_b","input_1228/10",Combined
+"amp_f32_three_phase_power_supply_current_b_raw","input_1228",Simple
+"volt_f32_three_phase_power_supply_voltage_c","input_1229",Simple
+"amp_f32_three_phase_power_supply_current_c","input_1230/10",Combined
+"amp_f32_three_phase_power_supply_current_c_raw","input_1230",Simple
+"s_f32_energy_efficiency","input_1239",Simple
+"error_hydraulic_module_communication","bitand(input_91, 1)",Bit
+"error_discharge_temperature_sensor","bitand(input_91, 2)",Bit
+"error_coil_temperature_sensor","bitand(input_91, 4)",Bit
+"error_ambient_temperature_sensor","bitand(input_91, 8)",Bit
+"error_refrigerant_liquid_temperature_sensor_error","bitand(input_91, 16)",Bit
+"error_suction_temperature_sensor","bitand(input_91, 32)",Bit
+"error_domestic_water_temperature_sensor","bitand(input_91, 64)",Bit
+"error_inlet_water_temperature_sensor","bitand(input_91, 128)",Bit
+"error_outlet_water_temperature_sensor","bitand(input_91, 256)",Bit
+"error_refrigerant_system_communication","bitand(input_91, 512)",Bit
+"error_discharge_pressure_sensor","bitand(input_91, 4096)",Bit
+"error_low_pressure_sensor","bitand(input_91, 8192)",Bit
+"error_dc_bus_voltage_too_low","bitand(input_91, 16384)",Bit
+"error_dc_bus_voltage_too_high","bitand(input_91, 32768)",Bit
+"error_peak_ac_input_current_too_high","bitand(input_92, 1)",Bit
+"error_abnormal_ipm_module","bitand(input_92, 2)",Bit
+"error_abnormal_pfc_module","bitand(input_92, 4)",Bit
+"error_compressor_startup_failure","bitand(input_92, 8)",Bit
+"error_compressor_phase_loss","bitand(input_92, 16)",Bit
+"error_inverter_module_reset","bitand(input_92, 32)",Bit
+"error_compressor_current_too_high","bitand(input_92, 64)",Bit
+"error_pcf_module_temperature_too_high","bitand(input_92, 128)",Bit
+"error_current_detection_circuit_failure","bitand(input_92, 256)",Bit
+"error_out_of_step_protection","bitand(input_92, 512)",Bit
+"error_pfc_module_temperature_sensor","bitand(input_92, 1024)",Bit
+"error_refirgerant_system_inverter_pcb_data_communication","bitand(input_92, 2048)",Bit
+"error_ipm_module_temperature_too_high","bitand(input_92, 4096)",Bit
+"error_ipm_module_temperature_sensor","bitand(input_92, 8192)",Bit
+"error_abnormal_ac_input_power_supply","bitand(input_93, 2)",Bit
+"error_inverter_module_debugging_data","bitand(input_93, 4)",Bit
+"error_power_off_reset","bitand(input_93, 8)",Bit
+"error_final_water_temperature_sensor","bitand(input_94, 1)",Bit
+"error_solar_temperature_sensor_tso","bitand(input_94, 2)",Bit
+"error_wire_controller_built-in_temperature_sensor_tro_faulty","bitand(input_94, 4)",Bit
+"error_zone_2_temperature_sensor_tz2_error","bitand(input_94, 8)",Bit
+"error_up_temperature_sensor_te1_of_buffer_tank","bitand(input_94, 16)",Bit
+"error_down_temperature_sensor_te2_of_buffer_tank","bitand(input_94, 32)",Bit
+"error_outlet_water_pressure_sensor_ps1","bitand(input_94, 128)",Bit
+"error_gas_sensor_offline","bitand(input_94, 256)",Bit
+"error_gas_sensor_fault","bitand(input_94, 512)",Bit
+"error_unit_module_offline","bitand(input_94, 1024)",Bit
+"error_water_flow_failure","bitand(input_97, 1)",Bit
+"error_refrigerant_pressure_too_high","bitand(input_97, 2)",Bit
+"error_refrigerant_pressure_too_low","bitand(input_97, 4)",Bit
+"error_coil_too_hot","bitand(input_97, 8)",Bit
+"error_discharge_temperature_too_high","bitand(input_97, 16)",Bit
+"error_water_temperature_too_low","bitand(input_97, 32)",Bit
+"error_refrigerant_liquid_temperature_too_low","bitand(input_97, 64)",Bit
+"error_system_pressure_too_high","bitand(input_97, 128)",Bit
+"error_low_refrigerant_liquid","bitand(input_97, 512)",Bit
+"error_dc_fan_1_failure","bitand(input_97, 1024)",Bit
+"error_4-way valve_shifting_failure","bitand(input_97, 4096)",Bit
+"error_refrigerant_leakage","bitand(input_97, 8192)",Bit
+"error_built-in_dc_water_pump_abnormal","bitand(input_98, 16)",Bit
+"error_outlet_water_pressure_sensor","bitand(input_98, 256)",Bit
