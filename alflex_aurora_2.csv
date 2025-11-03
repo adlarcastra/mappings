@@ -1,3 +1,11 @@
+"if_mb1_dev","if_mb1_dev",Simple
+"if_mb2_dev","if_mb2_dev",Simple
+"if_mb1","if_mb1",Simple
+"if_mb2","if_mb2",Simple
+"if_otm","if_otm",Simple
+"if_ots","if_ots",Simple
+"relay1","relay1",Simple
+"relay2","relay2",Simple
 "degrees_f32_set_water_temp_raw","",Simple
 "degrees_f32_set_water_temp","/10",Combined
 "degrees_f32_room_temp",xd,Simple
@@ -10,7 +18,7 @@
 "degrees_f32_return_temp",holding_79/10,Combined
 "lmin_f32_water_flow_raw",holding_88,Simple
 "lmin_f32_water_flow",holding_88/10,Combined
-"degrees_f32_heating_start_ambient_temp","if(holding_278 >= 32768, holding_278 - 65536, holding_278)",Combined
+"degrees_f32_heating_start_ambient_temp","holding_278",Combined
 "onoff_f32_power_on",holding_773,Simple
 "enum_f32_heating_mode",holding_772,Simple
 "enum_f32_heating_curve_cooling_low_temp","",Simple
