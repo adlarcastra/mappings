@@ -1,11 +1,3 @@
-"if_mb1_dev","if_mb1_dev",Simple
-"if_mb2_dev","if_mb2_dev",Simple
-"if_mb1","if_mb1",Simple
-"if_mb2","if_mb2",Simple
-"if_otm","if_otm",Simple
-"if_ots","if_ots",Simple
-"relay1","relay1",Simple
-"relay2","relay2",Simple
 "degrees_f32_set_water_temp_raw","",Simple
 "degrees_f32_set_water_temp","/10",Combined
 "degrees_f32_room_temp",xd,Simple
