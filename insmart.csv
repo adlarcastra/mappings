@@ -1,4 +1,4 @@
-"degrees_f32_set_water_temp",p_367*math::abs(p_363 - 1)+p_3*p_363,Combined
+"degrees_f32_set_water_temp",p_593,Combined
 "degrees_f32_set_water_temp_heating",p_367,Simple
 "degrees_f32_set_water_temp_cooling",p_3,Simple
 "degrees_f32_room_temp",p_9,Simple
