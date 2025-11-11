@@ -20,7 +20,8 @@
 "enum_f32_heating_type",holding_6185,Simple
 "enum_f32_heating_curve_heating_high_temp",holding_6191,Simple
 "hz_f32_compressor_frequency",input_80,Simple
-"hz_f32_fan_frequency",input_73,Simple
+"hz_f32_fan_frequency_raw",input_73,Simple
+"hz_f32_fan_frequency",input_73/60,Combined
 "kwh_f32_power_used","bitand(shl(input_1231, 16), input_1232)",Bit
 "kwh_f32_power_delivered","bitand(shl(input_1233, 16), input_1234) + bitand(shl(input_1235,16),input_1236)",Bit
 "enum_f32_sound_mode","holding_2104",Simple
