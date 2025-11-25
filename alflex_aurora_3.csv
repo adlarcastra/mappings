@@ -19,7 +19,7 @@
 "lmin_f32_water_flow_raw",input_65,Simple
 "lmin_f32_water_flow",input_65/10,Combined
 "degrees_f32_heating_start_ambient_temp","holding_6041",Simple
-"onoff_f32_power_on",holding_2102,Simple
+"onoff_f32_power_on","if(holding_2102 > 0, 0, 1)",Combined
 "enum_f32_heating_mode",holding_2101,Simple
 "enum_f32_heating_curve_cooling_low_temp",holding_6188,Simple
 "enum_f32_heating_curve_cooling_high_temp",holding_6189,Simple
