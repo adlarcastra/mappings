@@ -1,11 +1,3 @@
-"if_mb1_dev","if_mb1_dev",Simple
-"if_mb2_dev","if_mb2_dev",Simple
-"if_mb1","if_mb1",Simple
-"if_mb2","if_mb2",Simple
-"if_otm","if_otm",Simple
-"if_ots","if_ots",Simple
-"relay1","relay1",Simple
-"relay2","relay2",Simple
 "degrees_f32_set_water_temp_raw","",Simple
 "degrees_f32_set_water_temp","/10",Combined
 "degrees_f32_room_temp",xd,Simple
@@ -28,7 +20,8 @@
 "enum_f32_heating_curve_heating_high_temp","",Simple
 "enum_f32_heating_type","",Simple
 "hz_f32_compressor_frequency",holding_64,Simple
-"hz_f32_fan_frequency",holding_65,Simple
+"hz_f32_fan_frequency_raw",holding_65,Simple
+"hz_f32_fan_frequency",holding_65/60,Combined
 "kwh_f32_power_used","bitand(shl(holding_1232, 16), holding_1233)",Bit
 "kwh_f32_power_delivered","bitand(shl(holding_229, 16), holding_230) + bitand(shl(holding_236,16),holding_237)",Bit
 "onoff_f32_sensor_enable_boiler","holding_304",Simple
