@@ -1,0 +1,16 @@
+"degrees_f32_set_water_temp",p_367*math::abs(p_363 - 1)+p_3*p_363,Combined
+"degrees_f32_room_temp",p_9,Simple
+"degrees_f32_desired_temp",p_8,Simple
+"degrees_f32_outside_temp",p_22,Simple
+"degrees_f32_supply_temp",p_290,Simple
+"degrees_f32_return_temp",p_328,Simple
+"lmin_f32_water_flow",p_373,Simple
+"degrees_f32_heating_start_ambient_temp",p_341,Simple
+"onoff_f32_power_on",p_357,Simple
+"enum_f32_heating_mode",p_363,Simple
+"enum_f32_heating_curve_preset",p_370,Simple
+"onoff_f32_custom_heating_curve",p_342,Simple
+"hz_f32_compressor_frequency",p_325,Simple
+"hz_f32_fan_frequency",p_372,Simple
+"kwh_f32_power_used",math::abs(p_327*p_326/1000),Combined
+"kwh_f32_power_delivered","m = p_373 * 0.98; y = p_328 - p_290; math::abs(m * 4.187 * y * 1/60)",Combined
