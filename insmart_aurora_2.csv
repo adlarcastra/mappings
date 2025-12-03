@@ -9,8 +9,23 @@
 "onoff_f32_power_on",p_357,Simple
 "enum_f32_heating_mode",p_363,Simple
 "enum_f32_heating_curve_preset",p_370,Simple
-"onoff_f32_custom_heating_curve",p_342,Simple
+"onoff_f32_custom_heating_curve",p_418,Simple
 "hz_f32_compressor_frequency",p_325,Simple
 "hz_f32_fan_frequency",p_372,Simple
 "kwh_f32_power_used",math::abs(p_327*p_326/1000),Combined
 "kwh_f32_power_delivered","m = p_373 * 0.98; y = p_328 - p_290; math::abs(m * 4.187 * y * 1/60)",Combined
+"degrees_f32_set_water_temp_heating",p_593,Simple
+"degrees_f32_set_water_temp_cooling",p_367,Simple
+"degrees_f32_set_temp_heating_curve",p_3,Simple
+"degrees_f32_heating_curve_low",p_370,Simple
+"degrees_f32_heating_curve_high",p_370,Simple
+"bit_f32_jan_control_boiler_on_bit",p_455,Simple
+"bit_f32_jan_control_boiler_on_sdk",p_454,Simple
+"degrees_f32_jan_control_max_temp",p_439,Simple
+"degrees_f32_jan_control_min_temp",p_440,Simple
+"x_f32_jan_control_output_to_device",p_442,Simple
+"x_f32_jan_control_output_to_sdk",p_437,Simple
+"sec_f32_jan_control_interval",p_441,Simple
+"x_f32_jan_control_Kd",p_822",Simple
+"x_f32_jan_control_Ki",p_820",Simple
+"x_f32_jan_control_Kp",p_821",Simple
