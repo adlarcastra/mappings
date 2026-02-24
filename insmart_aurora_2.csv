@@ -26,6 +26,7 @@
 "x_f32_jan_control_output_to_device",p_442,Simple
 "x_f32_jan_control_output_to_sdk",p_437,Simple
 "sec_f32_jan_control_interval",p_441,Simple
-"x_f32_jan_control_Kd",p_822",Simple
-"x_f32_jan_control_Ki",p_820",Simple
-"x_f32_jan_control_Kp",p_821",Simple
+"x_f32_jan_control_Kd",p_822,Simple
+"x_f32_jan_control_Ki",p_820,Simple
+"x_f32_jan_control_Kp",p_821,Simple
+"percent_f32_cop","p_424",Simple
