@@ -2,168 +2,108 @@
 "degrees_f32_set_water_temp","/10",Combined
 "degrees_f32_room_temp",xd,Simple
 "degrees_f32_desired_temp",xd,Simple
-"degrees_f32_outside_temp_raw",holding_74,Simple
-"degrees_f32_outside_temp",holding_74/10,Combined
-"degrees_f32_supply_temp_raw",holding_80,Simple
-"degrees_f32_supply_temp",holding_80/10,Combined
-"degrees_f32_return_temp_raw",holding_79,Simple
-"degrees_f32_return_temp",holding_79/10,Combined
-"lmin_f32_water_flow_raw",holding_88,Simple
-"lmin_f32_water_flow",holding_88/10,Combined
-"degrees_f32_heating_start_ambient_temp","holding_278",Combined
-"onoff_f32_power_on",holding_773,Simple
-"enum_f32_heating_mode",holding_772,Simple
+"degrees_f32_outside_temp_raw",holding_76,Simple
+"degrees_f32_outside_temp",holding_76/10,Combined
+"degrees_f32_supply_temp_raw",holding_82,Simple
+"degrees_f32_supply_temp",holding_82/10,Combined
+"degrees_f32_return_temp_raw",holding_81,Simple
+"degrees_f32_return_temp",holding_81/10,Combined
+"lmin_f32_water_flow_raw",holding_90,Simple
+"lmin_f32_water_flow",holding_90/10,Combined
+"degrees_f32_heating_start_ambient_temp","holding_280",Combined
+"onoff_f32_power_on",holding_775,Simple
+"enum_f32_heating_mode",holding_774,Simple
 "enum_f32_heating_curve_cooling_low_temp","",Simple
 "enum_f32_heating_curve_cooling_high_temp","",Simple
 "enum_f32_cooling_type","",Simple
 "enum_f32_heating_curve_heating_low_temp","",Simple
 "enum_f32_heating_curve_heating_high_temp","",Simple
 "enum_f32_heating_type","",Simple
-"hz_f32_compressor_frequency",holding_64,Simple
-"hz_f32_fan_frequency_raw",holding_65,Simple
-"hz_f32_fan_frequency",holding_65/60,Combined
-"kwh_f32_power_used","bitand(shl(holding_1232, 16), holding_1233)",Bit
-"kwh_f32_power_delivered","bitand(shl(holding_229, 16), holding_230) + bitand(shl(holding_236,16),holding_237)",Bit
-"onoff_f32_sensor_enable_boiler","holding_304",Simple
-"onoff_f32_linkage_switch_setting","holding_261",Simple
-"lmin_f32_flow_value_during_e03","holding_390",Simple
-"degrees_f32_temp_difference_for_e37","holding_279",Simple
-"degrees_f32_manual_set_temp_heating","holding_769",Simple
-"degrees_f32_manual_set_temp_cooling","holding_768",Simple
-"enum_f32_heating_curve_heating_select","holding_788",Simple
-"enum_f32_heating_curve_cooling_select","holding_787",Simple
-"degrees_f32_max_outside_temp_heating","holding_362",Simple
-"degrees_f32_min_outside_temp_cooling","holding_361",Simple
-"degrees_f32_max_water_temp_heating","holding_366",Simple
-"degrees_f32_min_water_temp_heating","holding_367",Simple
-"degrees_f32_min_water_temp_cooling","holding_369",Simple
-"degrees_f32_max_water_temp_cooling","holding_370",Simple
-"onoff_f32_custom_heating_curve_heating","holding_2064",Simple
-"slope_f32_custom_heating_curve_heating_slope","holding_2065",Simple
-"degrees_f32_custom_heating_curve_heating_start","holding_2066",Simple
-"onoff_f32_custom_heating_curve_cooling","holding_2093",Simple
-"slope_f32_custom_heating_curve_cooling_slope","holding_2094",Simple
-"degrees_f32_custom_heating_curve_cooling_start","holding_2095",Simple
-"degrees_f32_hysteresis_a","holding_282",Simple
-"enum_f32_circulation_pump_mode","holding_284",Simple
-"onoff_f32_flow_switch","holding_259",Simple
-"percentage_f32_circulation_pump_max_speed","holding_516",Simple
-"percentage_f32_circulation_pump_min_speed","holding_356",Simple
-"percentage_f32_circulation_pump_min_speed_regulation","holding_419",Simple
-"percentage_f32_circulation_pump_speed_at_set_temp","holding_517",Simple
-"degrees_f32_temp_difference_for_circulation_pump_activation","holding_355",Simple
-"onoff_f32_heatpump_control_based_on_inlet","holding_372",Simple
-"onoff_f32_anti_block_circulation_on","holding_2110",Simple
-"days_f32_anti_block_circulation_interval","holding_2111",Simple
-"enum_f32_defrosting_mode","holding_286",Simple
-"rpm_f32_max_fan_frequency_heating","holding_324",Simple
-"rpm_f32_max_fan_frequency_cooling","holding_326",Simple
-"rpm_f32_max_fan_frequency_silent","holding_345",Simple
-"slope_f32_night_curve_slope","holding_2074",Simple
-"degrees_f32_night_curve_start","holding_2075",Simple
-"degrees_f32_night_curve_start_time","holding_2076",Simple
-"degrees_f32_night_curve_end_time","holding_2077",Simple
-"x_f32_current_unit_tool_number","holding_36",Simple
-"x_f32_eev_open_step","holding_66",Simple
-"x_f32_evi_valve_open_step","holding_67",Simple
-"volt_f32_ac_input_voltage","holding_68",Simple
-"x_f32_eev_open_step","holding_66",Simple
-"amp_f32_ac_input_current_raw","holding_69",Simple
-"amp_f32_ac_input_current","holding_69/10",Combined
-"amp_f32_compressor_phase_current_raw","holding_70",Simple
-"amp_f32_compressor_phase_current","holding_70/10",Combined
-"degrees_f32_compressor_ipm_temp","holding_71",Simple
-"degrees_f32_high_pressure_saturation_temp","holding_72",Simple
-"degrees_f32_low_pressure_saturation_temp","holding_73",Simple
-"degrees_f32_outer_coil_temp","holding_75",Simple
-"degrees_f32_coil_temp","holding_76",Simple
-"degrees_f32_suction_temp","holding_77",Simple
-"degrees_f32_exhaust_temp","holding_78",Simple
-"degrees_f32_economizer_inlet_temp","holding_81",Simple
-"degrees_f32_economizer_outlet_temp","holding_82",Simple
-"degrees_f32_plate_heat_exchanger_exhaust_temp","holding_85",Simple
-"x_f32_water_pump_speed_pwm","holding_87",Simple
-"volt_f32_unit_input_voltage","holding_90",Simple
-"amp_f32_unit_input_current_raw","holding_91",Simple
-"amp_f32_unit_input_current","holding_91/10",Combined
-"kw_f32_unit_input_power_raw","holding_92",Simple
-"kw_f32_unit_input_power","holding_92/10",Combined
-"kwh_f32_unit_input_power_consumption","holding_93",Simple
-"x_f32_smart_grid_status","holding_122",Simple
-"x_f32_number","holding_224",Simple
-"kwh_f32_power_consumption_6_min","holding_225",Simple
-"x_f32_cooling_capacity_6_min","holding_226",Simple
-"x_f32_eer_6_min","holding_227",Simple
-"x_f32_current_eer","holding_228",Simple
-"x_f32_heating_capacity_6_min","holding_233",Simple
-"x_f32_cop_6_min","holding_234",Simple
-"x_f32_current_cop","holding_235",Simple
-"error_wrong_phase","bitand(holding_3, 1)",Bit
-"error_missing_phase","bitand(holding_3, 2)",Bit
-"error_water_flow_failure","bitand(holding_3, 4)",Bit
-"error_communication_failure","bitand(holding_3, 8)",Bit
-"error_out_of_use_time","bitand(holding_3, 32)",Bit
-"error_water_tank_temperature_sensor","bitand(holding_3, 64)",Bit
-"error_inlet_water_temperature_sensor","bitand(holding_3, 128)",Bit
-"error_indoor_ambient_temperature_sensor","bitand(holding_3, 256)",Bit
-"error_ambient_temperature_sensor","bitand(holding_3, 512)",Bit
-"dhw return water temperature sensor failure","bitand(holding_3, 1024)",Bit
-"error_water_outlet_temperature_too_low_cooling_mode","bitand(holding_3, 2048)",Bit
-"error_outlet_water_temperature_sensor","bitand(holding_3, 8192)",Bit
-"error_water_outlet_temperature_too_high_heating_mode","bitand(holding_3, 16384)",Bit
-"error_temperature_difference_inlet_outlet_too_high","bitand(holding_3, 32768)",Bit
-"error_ambient_temperature_too_low","bitand(holding_4, 1)",Bit
-"error_water_flow_failure","bitand(holding_4, 32768)",Bit
-"error_expansion_board_communication","bitand(holding_5, 2)",Bit
-"error_high_pressure_switch_failure","bitand(holding_6, 1)",Bit
-"error_low_pressure_switch_failure","bitand(holding_6, 2)",Bit
-"error_high_pressure_too_high","bitand(holding_6, 4)",Bit
-"error_low_pressure_too_low","bitand(holding_6, 8)",Bit
-"error_exhaust_pressure_too_high","bitand(holding_6, 16)",Bit
-"error_current_protection","bitand(holding_6, 32)",Bit
-"error_coil_temperature_sensor_invalid_value","bitand(holding_6, 128)",Bit
-"error_suction_temperature_sensor","bitand(holding_6, 256)",Bit
-"error_exhaust_temperature_sensor_invalid_value","bitand(holding_6, 512)",Bit
-"error_economizer_inlet_temperature_sensor","bitand(holding_6, 1024)",Bit
-"error_economizer_outlet_temperature_sensor_failure","bitand(holding_6, 2048)",Bit
-"error_fan_drive_board_communication","bitand(holding_6, 4096)",Bit
-"error_fan_failure","bitand(holding_6, 8192)",Bit
-"error_cooling_coil_temperature_sensor","bitand(holding_6, 16384)",Bit
-"error_low_pressure_sensor","bitand(holding_7, 2)",Bit
-"error_compressor_drive_board_communication","bitand(holding_7, 16)",Bit
-"error_ipm_current_too_high","bitand(holding_8, 1)",Bit
-"error_compressor_driver_failure","bitand(holding_8, 2)",Bit
-"error_compressor_current_too_high","bitand(holding_8, 4)",Bit
-"error_input_voltage_missing_phase","bitand(holding_8, 8)",Bit
-"error_ipm_current_sampling_rate","bitand(holding_8, 16)",Bit
-"error_power_component_temperature_too_high","bitand(holding_8, 32)",Bit
-"error_pre-charge_failure","bitand(holding_8, 64)",Bit
-"error_dc_bus_voltage_too_high","bitand(holding_8, 128)",Bit
-"error_dc_bus_voltage_too_low","bitand(holding_8, 256)",Bit
-"error_ac_bus_voltage_too_low","bitand(holding_8, 512)",Bit
-"error_ac_bus_voltage_too_high","bitand(holding_8, 1024)",Bit
-"error_input_voltage_sampling_failure","bitand(holding_8, 2048)",Bit
-"error_dsp_pfc_communication","bitand(holding_8, 4096)",Bit
-"error_board_radiator_temperature_sensor","bitand(holding_8, 8192)",Bit
-"error_dsp_communicate_board_communication","bitand(holding_8, 16384)",Bit
-"error_motherboard_communication","bitand(holding_8, 32768)",Bit
-"warning_compressor_current_too_high","bitand(holding_9, 1)",Bit
-"warning_compressor_weak_magnetic_protection","bitand(holding_9, 2)",Bit
-"warning_ipm_module_temperature_too_high","bitand(holding_9, 4)",Bit
-"warning_pfc_module_temperature_too_high","bitand(holding_9, 8)",Bit
-"warning_ac_input_current_too_high","bitand(holding_9, 16)",Bit
-"warning_eeprom_error","bitand(holding_9, 32)",Bit
-"error_eeprom_refresh_complete","bitand(holding_9, 128)",Bit
-"error_temperature_sensing_failure_past_limit","bitand(holding_9, 256)",Bit
-"warning_ac_undervoltage_frequency_limit","bitand(holding_9, 512)",Bit
-"error_ipm_module_temperature_too_high_shutdown","bitand(holding_10, 1)",Bit
-"error_compressor_missing_phase","bitand(holding_10, 2)",Bit
-"error_compressor_overload","bitand(holding_10, 4)",Bit
-"error_input_current_sampling_failure","bitand(holding_10, 8)",Bit
-"error_ipm_supply_voltage_failure","bitand(holding_10, 16)",Bit
-"error_pre-charge_circuit_voltage_failure","bitand(holding_10, 32)",Bit
-"error_eeprom_failure","bitand(holding_10, 64)",Bit
-"error_ac_input_voltage_too_high","bitand(holding_10, 128)",Bit
-"error_microelectronics_failure","bitand(holding_10, 256)",Bit
-"error_compressor_type_code_failure","bitand(holding_10, 512)",Bit
-"error_current_sampling_signal_current_too_high","bitand(holding_10, 1024)",Bit
+"hz_f32_compressor_frequency",holding_66,Simple
+"hz_f32_fan_frequency_raw",holding_67,Simple
+"hz_f32_fan_frequency",holding_67/60,Combined
+"kwh_f32_power_used","bitand(shl(holding_1234, 16), holding_1235)",Bit
+"kwh_f32_power_delivered","bitand(shl(holding_231, 16), holding_232) + bitand(shl(holding_238,16),holding_239)",Bit
+"onoff_f32_sensor_enable_boiler","holding_306",Simple
+"onoff_f32_linkage_switch_setting","holding_263",Simple
+"lmin_f32_flow_value_during_e03","holding_392",Simple
+"degrees_f32_temp_difference_for_e37","holding_281",Simple
+"degrees_f32_manual_set_temp_heating","holding_771",Simple
+"degrees_f32_manual_set_temp_cooling","holding_770",Simple
+"enum_f32_heating_curve_heating_select","holding_790",Simple
+"enum_f32_heating_curve_cooling_select","holding_789",Simple
+"degrees_f32_max_outside_temp_heating","holding_364",Simple
+"degrees_f32_min_outside_temp_cooling","holding_363",Simple
+"degrees_f32_max_water_temp_heating","holding_368",Simple
+"degrees_f32_min_water_temp_heating","holding_369",Simple
+"degrees_f32_min_water_temp_cooling","holding_371",Simple
+"degrees_f32_max_water_temp_cooling","holding_372",Simple
+"onoff_f32_custom_heating_curve_heating","holding_2066",Simple
+"slope_f32_custom_heating_curve_heating_slope","holding_2067",Simple
+"degrees_f32_custom_heating_curve_heating_start","holding_2068",Simple
+"onoff_f32_custom_heating_curve_cooling","holding_2095",Simple
+"slope_f32_custom_heating_curve_cooling_slope","holding_2096",Simple
+"degrees_f32_custom_heating_curve_cooling_start","holding_2097",Simple
+"degrees_f32_hysteresis_a","holding_284",Simple
+"enum_f32_circulation_pump_mode","holding_286",Simple
+"onoff_f32_flow_switch","holding_261",Simple
+"percentage_f32_circulation_pump_max_speed","holding_518",Simple
+"percentage_f32_circulation_pump_min_speed","holding_358",Simple
+"percentage_f32_circulation_pump_min_speed_regulation","holding_421",Simple
+"percentage_f32_circulation_pump_speed_at_set_temp","holding_519",Simple
+"degrees_f32_temp_difference_for_circulation_pump_activation","holding_357",Simple
+"onoff_f32_heatpump_control_based_on_inlet","holding_374",Simple
+"onoff_f32_anti_block_circulation_on","holding_2112",Simple
+"days_f32_anti_block_circulation_interval","holding_2113",Simple
+"enum_f32_defrosting_mode","holding_288",Simple
+"rpm_f32_max_fan_frequency_heating","holding_326",Simple
+"rpm_f32_max_fan_frequency_cooling","holding_328",Simple
+"rpm_f32_max_fan_frequency_silent","holding_347",Simple
+"slope_f32_night_curve_slope","holding_2076",Simple
+"degrees_f32_night_curve_start","holding_2077",Simple
+"degrees_f32_night_curve_start_time","holding_2078",Simple
+"degrees_f32_night_curve_end_time","holding_2079",Simple
+"x_f32_current_unit_tool_number","holding_38",Simple
+"x_f32_eev_open_step","holding_68",Simple
+"x_f32_evi_valve_open_step","holding_69",Simple
+"volt_f32_ac_input_voltage","holding_70",Simple
+"x_f32_eev_open_step","holding_68",Simple
+"amp_f32_ac_input_current_raw","holding_71",Simple
+"amp_f32_ac_input_current","holding_71/10",Combined
+"amp_f32_compressor_phase_current_raw","holding_72",Simple
+"amp_f32_compressor_phase_current","holding_72/10",Combined
+"degrees_f32_compressor_ipm_temp","holding_73",Simple
+"degrees_f32_high_pressure_saturation_temp","holding_74",Simple
+"degrees_f32_low_pressure_saturation_temp","holding_75",Simple
+"degrees_f32_outer_coil_temp","holding_77",Simple
+"degrees_f32_coil_temp","holding_78",Simple
+"degrees_f32_suction_temp","holding_79",Simple
+"degrees_f32_exhaust_temp","holding_80",Simple
+"degrees_f32_economizer_inlet_temp","holding_83",Simple
+"degrees_f32_economizer_outlet_temp","holding_84",Simple
+"degrees_f32_plate_heat_exchanger_exhaust_temp","holding_87",Simple
+"x_f32_water_pump_speed_pwm","holding_89",Simple
+"volt_f32_unit_input_voltage","holding_92",Simple
+"amp_f32_unit_input_current_raw","holding_93",Simple
+"amp_f32_unit_input_current","holding_93/10",Combined
+"kw_f32_unit_input_power_raw","holding_94",Simple
+"kw_f32_unit_input_power","holding_94/10",Combined
+"kwh_f32_unit_input_power_consumption","holding_95",Simple
+"x_f32_smart_grid_status","holding_124",Simple
+"x_f32_number","holding_226",Simple
+"kwh_f32_power_consumption_6_min","holding_227",Simple
+"x_f32_cooling_capacity_6_min","holding_228",Simple
+"x_f32_eer_6_min","holding_229",Simple
+"x_f32_current_eer","holding_230",Simple
+"x_f32_heating_capacity_6_min","holding_235",Simple
+"x_f32_cop_6_min","holding_236",Simple
+"x_f32_current_cop","holding_237",Simple
+"degrees_f32_set_dhw_temp","holding_772/10",Combined
+"kwh_f32_program_version","holding_866",Simple
+"onoff_f32_sterilization","holding_2051",Simple
+"days_f32_sterilization_interval","holding_2052",Simple
+"time_f32_sterilization_start_time","holding_2053",Simple
+"minutes_f32_sterilization_run_time","holding_2054",Simple
+"degrees_f32_sterilization_temp","holding_2055/10",Combined
+"degrees_f32_dhw_tank_temp","holding_86/10",Combined
+"x_f32_water_pump_pwm_range_setting","holding_404",Simple
