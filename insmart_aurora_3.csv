@@ -1,32 +1,32 @@
-"degrees_f32_set_water_temp",p_367*math::abs(p_363 - 2)+p_3*(p_363 - 1),Combined
-"degrees_f32_outside_temp",p_22,Simple
-"enum_f32_heating_curve_preset",p_370,Simple
-"kwh_f32_power_used",math::abs(p_327*p_326/1000),Combined
-"kwh_f32_power_delivered","m = p_373 * 0.98; y = p_328 - p_290; math::abs(m * 4.187 * y * 1/60)",Combined
-"onoff_f32_power_on",p_357,Simple
-"enum_f32_heating_mode",(p_363 - 1),Combined
-"hz_f32_fan_frequency",p_315,Simple
-"hz_f32_compressor_frequency",p_325,Simple
-"lmin_f32_water_flow",p_373,Simple
-"degrees_f32_supply_temp",p_290,Simple
-"degrees_f32_return_temp",p_328,Simple
-"degrees_f32_room_temp",p_9,Simple
-"degrees_f32_desired_temp",p_8,Simple
-"onoff_f32_custom_heating_curve",p_629,Simple
-"degrees_f32_heating_start_ambient_temp",p_677,Simple
-"degrees_f32_set_water_temp_heating",p_3,Simple
-"degrees_f32_set_water_temp_cooling",p_635,Simple
-"degrees_f32_set_temp_heating_curve",p_633,Simple
-"degrees_f32_heating_curve_low",p_618,Simple
-"degrees_f32_heating_curve_high",p_617,Simple
 "bit_f32_jan_control_boiler_on_bit",p_455,Simple
 "bit_f32_jan_control_boiler_on_sdk",p_454,Simple
+"degrees_f32_desired_temp",p_8,Simple
+"degrees_f32_heating_curve_high",p_617,Simple
+"degrees_f32_heating_curve_low",p_618,Simple
+"degrees_f32_heating_start_ambient_temp",p_677,Simple
 "degrees_f32_jan_control_max_temp",p_439,Simple
 "degrees_f32_jan_control_min_temp",p_440,Simple
+"degrees_f32_outside_temp",p_22,Simple
+"degrees_f32_return_temp",p_328,Simple
+"degrees_f32_room_temp",p_9,Simple
+"degrees_f32_set_temp_heating_curve",p_633,Simple
+"degrees_f32_set_water_temp",p_367*math::abs(p_363 - 2)+p_3*(p_363 - 1),Combined
+"degrees_f32_set_water_temp_cooling",p_635,Simple
+"degrees_f32_set_water_temp_heating",p_3,Simple
+"degrees_f32_supply_temp",p_290,Simple
+"enum_f32_heating_curve_preset",p_370,Simple
+"enum_f32_heating_mode",(p_363 - 1),Combined
+"percent_f32_cop","max(0, (p_373/60)*4.186*(p_290-p_328))/((p_327*p_326)/1000))",Combined
+"hz_f32_compressor_frequency",p_325,Simple
+"hz_f32_fan_frequency",p_315,Simple
+"kwh_f32_power_delivered","m = p_373 * 0.98; y = p_328 - p_290; math::abs(m * 4.187 * y * 1/60)",Combined
+"kwh_f32_power_used",math::abs(p_327*p_326/1000),Combined
+"lmin_f32_water_flow",p_373,Simple
+"onoff_f32_custom_heating_curve",p_629,Simple
+"onoff_f32_power_on",p_357,Simple
+"sec_f32_jan_control_interval",p_441,Simple
+"x_f32_jan_control_Kd",p_822",Simple
+"x_f32_jan_control_Ki",p_820",Simple
+"x_f32_jan_control_Kp",p_821",Simple
 "x_f32_jan_control_output_to_device",p_442,Simple
 "x_f32_jan_control_output_to_sdk",p_437,Simple
-"sec_f32_jan_control_interval",p_441,Simple
-"x_f32_jan_control_Kd",p_822,Simple
-"x_f32_jan_control_Ki",p_820,Simple
-"x_f32_jan_control_Kp",p_821,Simple
-"percent_f32_cop","p_424",Simple
