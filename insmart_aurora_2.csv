@@ -18,7 +18,7 @@
 "enum_f32_heating_mode",p_363,Simple
 "kwh_f32_thermal_power",((p_373/60)*4.186*(p_290-p_328))*(5/60),Combined
 "kwh_f32_electric_power",(((p_332/100)*p_331)/1000)*(5/60),Combined
-"percent_f32_cop","max(0, ((p_373/60)*4.186*(p_290-p_328))/(((p_332/100)*p_331)/1000))",Combined
+"percent_f32_cop","max(0.0, ((p_373/60)*4.186*(p_290-p_328))/(((p_332/100)*p_331)/1000))",Combined
 "hz_f32_compressor_frequency",p_325,Simple
 "hz_f32_fan_frequency",p_372,Simple
 "kwh_f32_power_delivered","m = p_373 * 0.98; y = p_328 - p_290; math::abs(m * 4.187 * y * 1/60)",Combined
