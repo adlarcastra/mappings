@@ -3,7 +3,6 @@
 -- eniris monitoring web hook -> intermediate representation
 
 return function(p)
-
 	------------------------------------------------------------
 	-- Helpers
 	------------------------------------------------------------
@@ -30,23 +29,25 @@ return function(p)
 	------------------------------------------------------------
 	-- Total house consumption
 	--
-	-- Residual is the unclassified household consumption.
-	-- Total house consumption is:
+	-- Power balance:
 	--
-	--   residual + devices + EV
+	--   solar + battery + grid + residual + devices + EV = 0
 	--
-	-- NOTE:
-	-- This assumes the source provides an active power value
-	-- for devices and EV.
+	-- Therefore:
+	--
+	--   residual = -(solar + battery + grid + devices + EV)
+	--
+	-- Total household consumption:
+	--
+	--   house = residual + devices + EV
 	------------------------------------------------------------
 
-	local residual_power =
-		f32(p.residual_active_power_W)
+	local residual_power = -1 * (solar_power + battery_power + grid_power + devices_power + ev_power)
 
 	local total_house_power =
-		residual_power
-		+ devices_power
-		+ ev_power
+			residual_power
+			+ devices_power
+			+ ev_power
 
 	------------------------------------------------------------
 	-- Return structured output
@@ -62,42 +63,42 @@ return function(p)
 		--------------------------------------------------------
 
 		w_f32_solar_power =
-			solar_power,
+				solar_power,
 
 		--------------------------------------------------------
 		-- Battery
 		--------------------------------------------------------
 
 		w_f32_battery_power =
-			battery_power,
+				battery_power,
 
 		kwh_f32_battery_energy_stored =
-			kwh_from_wh(p.storage_energy_stored_Wh),
+				kwh_from_wh(p.storage_energy_stored_Wh),
 
 		kwh_f32_battery_energy_capacity =
-			kwh_from_wh(p.storage_energy_capacity_Wh),
+				kwh_from_wh(p.storage_energy_capacity_Wh),
 
 		--------------------------------------------------------
 		-- Grid
 		--------------------------------------------------------
 
 		w_f32_grid_power =
-			grid_power,
+				grid_power,
 
 		--------------------------------------------------------
 		-- Household consumption
 		--------------------------------------------------------
 
 		w_f32_residual_power =
-			residual_power,
+				residual_power,
 
 		w_f32_devices_power =
-			devices_power,
+				devices_power,
 
 		w_f32_ev_power =
-			ev_power,
+				ev_power,
 
 		w_f32_total_house_power =
-			total_house_power
+				total_house_power
 	}
 end
