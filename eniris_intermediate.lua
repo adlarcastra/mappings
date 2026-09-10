@@ -64,6 +64,7 @@ return function(p)
 
 		w_f32_solar_power =
 				solar_power,
+		kwh_f32_solar_total_energy = kwh_from_wh(p.solar_total_energy_Wh),
 
 		--------------------------------------------------------
 		-- Battery
@@ -78,12 +79,18 @@ return function(p)
 		kwh_f32_battery_energy_capacity =
 				kwh_from_wh(p.storage_energy_capacity_Wh),
 
+		kwh_f32_battery_total_charged = kwh_from_wh(p.storage_total_charged_Wh),
+		kwh_f32_battery_total_discharged = kwh_from_wh(p.storage_total_discharged_Wh),
+
 		--------------------------------------------------------
 		-- Grid
 		--------------------------------------------------------
 
 		w_f32_grid_power =
 				grid_power,
+
+		kwh_f32_total_imported_grid_energy = kwh_from_wh(p.grid_total_imported_energy_Wh),
+		kwh_f32_total_exported_grid_energy = kwh_from_wh(p.grid_total_exported_energy_Wh),
 
 		--------------------------------------------------------
 		-- Household consumption
