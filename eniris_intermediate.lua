@@ -20,7 +20,8 @@ return function(p)
 	------------------------------------------------------------
 
 	local solar_power = f32(p.solar_active_power_W)
-	local battery_power = f32(p.storage_active_power_W)
+	-- idk why but the battery power is flipped
+	local battery_power = f32(p.storage_active_power_W) * -1
 	local grid_power = f32(p.grid_active_power_W)
 
 	local devices_power = f32(p.switched_load_active_power_W)
