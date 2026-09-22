@@ -3,7 +3,12 @@
 -- raw insmart csv -> intermediate representation
 
 return function(p)
-    local heatpump_actively_heating = p.hz_f32_compressor_frequency > 0 and (p.degrees_f32_supply_temp - p.degrees_f32_return_temp) > 0.5
+	local hz_f32_compressor_frequency = p.p_325:unwrap_or(0.0)
+	local degrees_f32_supply_temp = p.p_290:unwrap_or(0.0)
+	local degrees_f32_return_temp = p.p_328:unwrap_or(0.0)
+
+	local heatpump_actively_heating = hz_f32_compressor_frequency > 0 and
+			(degrees_f32_supply_temp - degrees_f32_return_temp) > 0.5
 	------------------------------------------------------------
 	-- Heating / cooling mode selection
 	------------------------------------------------------------
@@ -96,9 +101,9 @@ return function(p)
 		--------------------------------------------------------
 		degrees_f32_desired_temp               = p.p_8,
 		degrees_f32_outside_temp               = p.p_22,
-		degrees_f32_return_temp                = p.p_328,
+		degrees_f32_return_temp                = degrees_f32_return_temp,
 		degrees_f32_room_temp                  = p.p_9,
-		degrees_f32_supply_temp                = p.p_290,
+		degrees_f32_supply_temp                = degrees_f32_supply_temp,
 
 		--------------------------------------------------------
 		-- Heating curve
@@ -139,7 +144,7 @@ return function(p)
 		--------------------------------------------------------
 		-- Frequencies / flow
 		--------------------------------------------------------
-		hz_f32_compressor_frequency            = p.p_325,
+		hz_f32_compressor_frequency            = hz_f32_compressor_frequency,
 		hz_f32_fan_frequency                   = p.p_315,
 		lmin_f32_water_flow                    = flow_lmin,
 
