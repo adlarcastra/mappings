@@ -1,6 +1,6 @@
 -- Device:            Aurora 2 pro
 -- Module provider:   Insmart
--- raw insmart csv -> intermediate representation
+-- raw insmart data -> intermediate representation
 
 return function(p)
 

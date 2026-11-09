@@ -1,6 +1,6 @@
 -- Device:            Aurora 3 pro
 -- Module provider:   Insmart
--- raw insmart csv -> intermediate representation
+-- raw insmart data -> intermediate representation
 
 return function(p)
 	local hz_f32_compressor_frequency = p.p_325:unwrap_or(0.0)
