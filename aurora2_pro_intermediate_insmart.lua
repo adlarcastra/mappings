@@ -29,8 +29,8 @@ return function(p)
 	local supply_temp  = p.p_290:unwrap_or(0.0)
 	local return_temp  = p.p_328:unwrap_or(0.0)
 
-	local voltage      = (p.p_332:unwrap_or(0.0)) / 100
-	local current      = p.p_331:unwrap_or(0.0)
+	local voltage      = p.p_331:unwrap_or(0.0)
+	local current      = (p.p_332:unwrap_or(0.0)) / 100
 
 	-- sample period (5 minutes)
 	local sample_hours = 5.0 / 60.0
@@ -41,6 +41,7 @@ return function(p)
 	local thermal_kw   =
 			(flow_lmin / 60) * 4.186 * (supply_temp - return_temp)
 
+    -- \/ matches the result of p.p_333.unwrap_or(0.0) / 100.0
 	local electric_kw  =
 			(voltage * current) / 1000
 
