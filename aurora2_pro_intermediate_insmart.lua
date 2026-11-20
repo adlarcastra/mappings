@@ -3,7 +3,6 @@
 -- raw insmart data -> intermediate representation
 
 return function(p)
-
 	local hz_f32_compressor_frequency = p.p_325:unwrap_or(0.0)
 	local degrees_f32_supply_temp = p.p_290:unwrap_or(0.0)
 	local degrees_f32_return_temp = p.p_328:unwrap_or(0.0)
@@ -15,11 +14,66 @@ return function(p)
 	------------------------------------------------------------
 	local degrees_f32_set_water_temp = nil
 
-	local mode = p.p_363:unwrap_or(0)
-	if mode == 1 then
-		degrees_f32_set_water_temp = p.p_593 -- heating
-	elseif mode == 2 then
+	local custom_heating_curve = p.p_418
+	-- Off
+	-- On
+
+	local heating_curve_cooling = p.p_369
+	-- 0  Off
+	-- 1  CH1
+	-- 2  CH2
+	-- 3  CH3
+	-- 4  CH4
+	-- 5  CH5
+	-- 6  CH6
+	-- 7  CH7
+	-- 9  UNKNOWN
+	-- 10 UNKNOWN
+	-- 11 CL1
+	-- 12 CL2
+	-- 13 CL3
+	-- 14 CL4
+	-- 15 CL5
+	-- 16 CL6
+	-- 17 CL7
+	-- 18 CL9
+
+	local heating_curve_heating = p.p_370
+	-- 0  Uit
+	-- 1  HH1
+	-- 2  HH2
+	-- 3  HH3
+	-- 4  HH4
+	-- 5  HH5
+	-- 6  HH6
+	-- 7  HH7
+	-- 8  HH8
+	-- 9  UNKNOWN
+	-- 10 UNKNOWN
+	-- 11 LH1
+	-- 12 LH2
+	-- 13 LH3
+	-- 14 LH4
+	-- 15 LH5
+	-- 16 LH6
+	-- 17 LH7
+	-- 18 LH8
+
+
+	local mode = p.p_363 -- Already zero indexed
+	-- 0 cooling
+	-- 1 heating
+	-- 2 warm water
+	-- 3 UNKNOWN
+	-- 4 UNKNOWN
+	-- 5 heating and warm water
+
+	if mode == 0 then
+		-- p.p_369 cooling
 		degrees_f32_set_water_temp = p.p_367 -- cooling
+	elseif mode == 1 then
+		-- p.p_370 heating
+		degrees_f32_set_water_temp = p.p_593 -- heating
 	end
 
 	------------------------------------------------------------
@@ -41,7 +95,7 @@ return function(p)
 	local thermal_kw   =
 			(flow_lmin / 60) * 4.186 * (supply_temp - return_temp)
 
-    -- \/ matches the result of p.p_333.unwrap_or(0.0) / 100.0
+	-- \/ matches the result of p.p_333.unwrap_or(0.0) / 100.0
 	local electric_kw  =
 			(voltage * current) / 1000
 
@@ -97,7 +151,7 @@ return function(p)
 		-- Control
 		--------------------------------------------------------
 		degrees_f32_set_water_temp = degrees_f32_set_water_temp,
-		enum_f32_heating_mode = p.p_363 - 1,
+		enum_f32_heating_mode = mode,
 
 		--------------------------------------------------------
 		-- Temperatures

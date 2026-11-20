@@ -14,11 +14,16 @@ return function(p)
 	------------------------------------------------------------
 	local degrees_f32_set_water_temp = nil
 
-	local mode = p.p_363:unwrap_or(0)
-	if mode == 1 then
+	local mode = p.p_363 - 1
+	-- 0 cooling
+	-- 1 heating
+	-- 2 automatic
+	-- 3 cooling and DHW
+
+	if mode == 0 then
+		degrees_f32_set_water_temp = p.p_635 -- cooling		
+	elseif mode == 1 then
 		degrees_f32_set_water_temp = p.p_3 -- heating
-	elseif mode == 2 then
-		degrees_f32_set_water_temp = p.p_635 -- cooling
 	end
 
 	------------------------------------------------------------
