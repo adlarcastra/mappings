@@ -69,10 +69,10 @@ return function(p)
 	-- 5 heating and warm water
 
 	if mode == 0 then
-		-- p.p_369 cooling
+		-- Aurora 2 updates these automatically if there is a heating curve active
 		degrees_f32_set_water_temp = p.p_367 -- cooling
 	elseif mode == 1 then
-		-- p.p_370 heating
+		-- Aurora 2 updates these automatically if there is a heating curve active
 		degrees_f32_set_water_temp = p.p_593 -- heating
 	end
 
