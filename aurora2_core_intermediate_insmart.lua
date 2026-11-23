@@ -14,11 +14,18 @@ return function(p)
 	------------------------------------------------------------
 	local degrees_f32_set_water_temp = nil
 
-	local mode = p.p_363:unwrap_or(0)
-	if mode == 1 then
-		degrees_f32_set_water_temp = p.p_593 -- heating
-	elseif mode == 2 then
-		degrees_f32_set_water_temp = p.p_367 -- cooling
+	local mode = p.p_363 - 1
+	-- 0 cooling
+	-- 1 heating
+	-- 2 unknown
+	-- 3 automatic
+
+	if mode == 0 then
+		-- 367 cooling when heating curve is off
+	 	degrees_f32_set_water_temp = p.p_635 -- cooling
+	elseif mode == 1 then
+		-- 593 heating when heating curve is off
+		degrees_f32_set_water_temp = p.p_3	 -- heating
 	end
 
 	------------------------------------------------------------
@@ -96,7 +103,7 @@ return function(p)
 		-- Control
 		--------------------------------------------------------
 		degrees_f32_set_water_temp = degrees_f32_set_water_temp,
-		enum_f32_heating_mode = p.p_363 - 1,
+		enum_f32_heating_mode = mode,
 
 		--------------------------------------------------------
 		-- Temperatures

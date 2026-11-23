@@ -20,9 +20,13 @@ return function(p)
 	-- 2 automatic
 	-- 3 cooling and DHW
 
+-- cooling 367
+-- heating 593
 	if mode == 0 then
+		-- These get changed automatically depending on heating curve
 		degrees_f32_set_water_temp = p.p_635 -- cooling		
 	elseif mode == 1 then
+		-- These get changed automatically depending on heating curve
 		degrees_f32_set_water_temp = p.p_3 -- heating
 	end
 
@@ -99,7 +103,7 @@ return function(p)
 		-- Control
 		--------------------------------------------------------
 		degrees_f32_set_water_temp             = degrees_f32_set_water_temp,
-		enum_f32_heating_mode                  = p.p_363 - 1,
+		enum_f32_heating_mode                  = mode,
 
 		--------------------------------------------------------
 		-- Temperatures
