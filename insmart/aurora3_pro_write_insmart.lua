@@ -4,25 +4,10 @@
 
 return function(current_data, parameter_name, new_value)
 	local mappings = {
-		test = function(_, value)
+		enum_f32_heating_mode = function(_, value)
 			return {
-				{ "367", value }
+				{ "363", value - 1 }
 			}
-		end,
-		degrees_f32_set_water_temp = function(p, value)
-			local mode = p.enum_f32_heating_mode:unwrap_or(9999)
-
-			if mode == 0 then
-				return {
-					{ "593", value } -- heating
-				}
-			elseif mode == 1 then
-				return {
-					{ "367", value } -- cooling
-				}
-			end
-
-			error("Unsupported water temperature mode: " .. tostring(mode))
 		end,
 		onoff_f32_power_on = function(_, value)
 			return {

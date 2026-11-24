@@ -9,6 +9,12 @@ return function(p)
 
 	local heatpump_actively_heating = hz_f32_compressor_frequency > 0 and
 			(degrees_f32_supply_temp - degrees_f32_return_temp) > 0.5
+
+	local sound_mode = p.p_368
+	-- 0 standard
+	-- 1 silent level 1
+	-- 2 silent level 2
+
 	------------------------------------------------------------
 	-- Heating / cooling mode selection
 	------------------------------------------------------------
@@ -104,6 +110,7 @@ return function(p)
 		--------------------------------------------------------
 		degrees_f32_set_water_temp             = degrees_f32_set_water_temp,
 		enum_f32_heating_mode                  = mode,
+		enum_f32_sound_mode										 = sound_mode,
 
 		--------------------------------------------------------
 		-- Temperatures
@@ -122,7 +129,7 @@ return function(p)
 		degrees_f32_heating_start_ambient_temp = p.p_677,
 		degrees_f32_set_temp_heating_curve     = p.p_633,
 		enum_f32_heating_curve_preset          = p.p_370,
-		onoff_f32_custom_heating_curve         = p.p_629,
+		onoff_f32_custom_heating_curve         = p.p_629, -- incorrect
 
 		--------------------------------------------------------
 		-- Power (instant)
